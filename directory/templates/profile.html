@@ -1,0 +1,25 @@
+{% extends "base.html" %} {% block content %}
+<div class="container" id="profile">
+    <div class="row">
+        <div class="col-md-3">
+            <span class="photo" aria-hidden="true">
+                <img src="{{current_user.profile.photo}}" width="200" height="200">
+            </span>
+            
+        </div>
+        <div class="col-md-9">
+            <h2>{{ current_user.profile.name + " " + current_user.profile.surname}}</h2>
+            <p>{{ current_user.profile.faculty }}</p>
+            <p>{{ current_user.profile.year }}</p>
+            <p>{{ current_user.profile.position + " at " + current_user.profile.company}}</p>
+            <p>{{ current_user.profile.location }}</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <h3>Expertise:</h3>
+            <p>{{ current_user.profile.expertise }}</p>
+        </div>
+    </div>
+</div>
+{% endblock %}

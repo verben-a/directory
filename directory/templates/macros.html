@@ -1,0 +1,20 @@
+{% macro render_profile(profile) %}
+<div class="row profile-row">
+
+<div class="col-md-3 text-left metadata">
+            <span class="photo" aria-hidden="true">
+                <img src="../static/fonts/pepper.jpg" width="150" height="150">
+            </span>
+        </div>
+        <div class="col-md-9">
+        <ul class="list-unstyled">
+            <li>{{ profile.name + " " + profile.surname}}</li>
+            <li> {{ profile.location }}</li>
+            <li>Faculty: {{ profile.faculty }}</li>
+            <li>{{ profile.year }}</li>
+            <li>{{ profile.position + " at " + profile.company}}</li>
+            </li>
+        </ul>
+    </div>
+</div>
+{% endmacro %}

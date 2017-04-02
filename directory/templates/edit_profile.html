@@ -1,0 +1,51 @@
+{% extends "base.html" %} 
+{% block content %}
+<section class="signup-form">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <form role="form" method="POST" enctype="multipart/form-data">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="name" class="form-control" value="{{name}}" id="name" name="name" placeholder="Name" required>
+                        <label for="surname">Surname</label>
+                        <input type="surname" class="form-control" value="{{surname}}" id="surname" name="surname" placeholder="Surname" required>
+                    </div>
+                    <div class="form-group">
+                        <input name="file" type="file" accept="image/*">
+                    </div>
+                    <div class="form-group">
+                    <label for="email">Email</label>
+                        <input type="email" class="form-control" value="{{email}}" id="email" name="email" placeholder="Email address" required>
+                        <label for="password">Password</label>
+                        <input type="password" class="form-control" id="password" name="password" placeholder="Password" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="faculty">Faculty</label>
+                        <input type="faculty" class="form-control" value="{{faculty}}" id="faculty" name="faculty" placeholder="Faculty" required>
+                        <label for="year">Year of graduation</label>
+                        <input type="year" class="form-control" value="{{year}}" id="year" name="year" placeholder="Year" required>
+                    </div>
+                    </div>
+                    <div class="col-md-4">
+                    <div class="form-group">
+                        <label for="location">Location</label>
+                        <input type="location" class="form-control" value="{{location}}" id="location" name="location" placeholder="Location" required>
+                        <label for="industry">Industry</label>
+                        <input type="industry" class="form-control" value="{{industry}}" id="industry" name="industry" placeholder="Industry" required>
+                        <label for="company">Company</label>
+                        <input type="company" class="form-control" value="{{company}}" id="company" name="company" placeholder="Company" required>
+                        <label for="position">Position</label>
+                        <input type="position" class="form-control" value="{{position}}" id="position" name="position" placeholder="Position" required>
+                        <label for="expertise">Expertise</label>
+                        <input type="expertise" class="form-control" value="{{expertise}}" id="expertise" name="expertise" placeholder="Expertise">
+                    </div>
+                    <button type="submit" class="btn btn-default">Submit</button>
+                    <a href="/profile" class="btn btn-default">Cancel</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}

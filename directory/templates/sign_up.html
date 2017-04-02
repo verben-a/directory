@@ -1,0 +1,47 @@
+{% extends "base.html" %} 
+{% block content %}
+<section class="signup-form">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <form role="form" method="POST">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="name" class="form-control" id="name" name="name" placeholder="Name" required>
+                        <label for="surname">Surname</label>
+                        <input type="surname" class="form-control" id="surname" name="surname" placeholder="Surname" required>
+                    </div>
+                    <div class="form-group">
+                    <label for="email">Email</label>
+                        <input type="email" class="form-control" id="email" name="email" placeholder="Email address" required>
+                        <label for="password">Password</label>
+                        <input type="password" class="form-control" id="password" name="password" placeholder="Password" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="faculty">Faculty</label>
+                        <input type="faculty" class="form-control" id="faculty" name="faculty" placeholder="Faculty" required>
+                        <label for="year">Year of graduation</label>
+                        <input type="year" class="form-control" id="year" name="year" placeholder="Year" required>
+                    </div>
+                    </div>
+                    <div class="col-md-4">
+                    <div class="form-group">
+                        <label for="location">Location</label>
+                        <input type="location" class="form-control" id="location" name="location" placeholder="Location" required>
+                        <label for="industry">Industry</label>
+                        <input type="industry" class="form-control" id="industry" name="industry" placeholder="Industry" required>
+                        <label for="company">Company</label>
+                        <input type="company" class="form-control" id="company" name="company" placeholder="Company" required>
+                        <label for="position">Position</label>
+                        <input type="position" class="form-control" id="position" name="position" placeholder="Position" required>
+                        <label for="expertise">Expertise</label>
+                        <input type="expertise" class="form-control" id="expertise" name="expertise" placeholder="Expertise">
+                    </div>
+                    <button type="submit" class="btn btn-default">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}
